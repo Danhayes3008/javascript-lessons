@@ -6,3 +6,11 @@ body{
 .container{
     padding: 5px;
 }
+
+.grid > div{
+    background: #eee;
+    padding: 1em;
+}
+.grid > div:nth-child(odd){
+    background: #ddd;
+}
