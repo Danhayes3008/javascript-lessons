@@ -4,16 +4,20 @@ const Room = ({room}) => {
     return (
         <div>
             <table>
-                <tr>
-                    <th>Total Rooms</th>
-                    <th>Rooms Booked</th>
-                    <th>Total Rooms Available</th>
-                </tr>
-                <tr>
-                    <td>{room.rooms}</td>
-                    <td>{room.booked}</td>
-                    <td>{ room.available}</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Total Rooms</th>
+                        <th>Rooms Booked</th>
+                        <th>Total Rooms Available</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{room.rooms}</td>
+                        <td>{room.booked}</td>
+                        <td>{ room.available}</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     )
